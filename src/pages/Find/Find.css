@@ -1,0 +1,137 @@
+.Find {
+    width: 100vw;
+    font-family:'GmarketSansMedium';
+}
+
+.Find-Blue {
+    width: 100%;
+    background-color: #2F6AEB;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.Find-Blue-Warp {
+    width: 85%;
+}
+
+.Find-Blue-Warp-Filters {
+    margin: 40px 0px;
+}
+
+.Find-Blue-Warp-Filters-Filter-Title {
+    text-align: left;
+    font-size: 30px;
+    color: white;
+    margin: 15px 0px;
+}
+
+.Find-Blue-Warp-Filters-Filter-FilterBoxs {
+    margin: 35px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Find-Blue-Warp-Filters-Filter-FilterBoxs-FilterBox {
+    width: 150px;
+    height: 45px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    align-content: center;
+    margin: 0px 30px 30px 0px;
+    cursor: pointer;
+}
+
+.Find-Blue-Warp-Filters-Filter-FilterBoxs-FilterBox:hover {
+    width: 150px;
+    height: 45px;
+    background-color: rgb(226, 226, 226);
+    border-radius: 20px 20px 20px 20px;
+    align-content: center;
+    margin: 0px 30px 30px 0px;
+    cursor: pointer;
+}
+
+.Find-Blue-Warp-Filters-Filter-FilterBoxs-FilterBox-Name {
+    color: #2F6AEB;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.Find-Blue-Warp-Filters-Filter-FilterBoxs-FilterBox.selected {
+    background-color: #7027e7;
+    border: 1px solid white;
+}
+
+.Find-Blue-Warp-Filters-Filter-FilterBoxs-FilterBox.selected .Find-Blue-Warp-Filters-Filter-FilterBoxs-FilterBox-Name {
+    color: white;
+}
+
+.Find-White {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.Find-White-Wrap {
+    width: 85%;
+    margin: 15px 0px;
+}
+
+.Find-White-Wrap-Title {
+    font-weight: bold;
+    text-align: left;
+    font-size: 30px;
+    margin: 50px 0px;
+}
+
+.Find-White-Wrap-Body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+@media (max-width: 635px) {
+
+    .Find-Blue-Warp-Filters-Filter {
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+
+    }
+
+    .Find-Blue-Warp-Filters-Filter-FilterBoxs {
+        margin: 35px 0px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+
+    }
+
+    .Find-Blue-Warp-Filters-Filter-FilterBoxs-FilterBox {
+        width: 150px;
+        height: 45px;
+        background-color: white;
+        border-radius: 20px 20px 20px 20px;
+        align-content: center;
+        margin: 0px 20px 30px 20px;
+        cursor: pointer;
+    }
+
+    .Find-Blue-Warp-Filters-Filter-FilterBoxs-FilterBox:hover {
+        width: 150px;
+        height: 45px;
+        background-color: rgb(226, 226, 226);
+        border-radius: 20px 20px 20px 20px;
+        align-content: center;
+        margin: 0px 20px 30px 20px;
+        cursor: pointer;
+    }
+  }

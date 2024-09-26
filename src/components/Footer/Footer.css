@@ -1,0 +1,70 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Footer{
+    border-top: 1px solid rgb(206, 206, 206);
+    height: 240px;
+    display: flex;
+    align-items: center;
+    padding: 10px 150px;
+    justify-content: space-between;
+}
+
+.Footer-Left{
+    font-family:'GmarketSansMedium';
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.Footer-Left p {
+    padding-top: 4px;
+}
+
+.Footer-Left-Title{
+    font-size: 18px;
+}
+
+.Footer-Left-Content{
+    font-size: 14px;
+}
+
+.Footer-Left-Copyright{
+    padding-top: 10px;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.Footer-Right-Image img{
+    width: 220px;
+}
+
+@media (max-width: 970px) {
+
+    .Footer{
+        height: 240px;
+        display: flex;
+        align-items: center;
+        padding: 10px 30px;
+        justify-content: space-between;
+    }
+
+    .Footer-Left-Title{
+        font-size: 14px;
+    }
+    
+    .Footer-Left-Content{
+        font-size: 9px;
+    }
+    
+    .Footer-Left-Copyright{
+        font-size: 7px;
+    }
+    
+    .Footer-Right-Image img{
+        width: 130px;
+    }
+    
+  }

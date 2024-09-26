@@ -1,0 +1,23 @@
+
+
+.Alliance{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family:'GmarketSansMedium';
+}
+
+.Alliance-Warp{
+    width: 90%;
+    
+}
+
+.Alliance-Warp-Title{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 60px 0px;
+}
+
+.Alliance-Warp-Body{
+    margin: 60px 0px;
+}

@@ -1,0 +1,45 @@
+.BoxContent{
+    background-color: white;
+    width:350px;
+    height: 370px;
+    border-radius: 20px;    
+    margin: 0px 20px 60px 20px;
+    transition-duration: 0.3s;
+    border: 1px solid rgb(205, 203, 203);
+    box-shadow: 0px 0px 10px black;
+}
+.BoxContent:hover {
+    transform: translateY(-10px);
+    transition-duration: 0.3s;
+}
+
+.BoxContent-img{
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    height: 70%;
+}
+
+.BoxContent img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.BoxContent-contents{
+    align-content: center;
+    text-align: center;
+    height: 30%;
+}
+.BoxContent-contents p{
+    margin: 4px 0px;
+}
+
+.BoxContent-contents-title{
+    font-size: 20px;
+    font-weight: bold;
+}   
+.BoxContent-contents-content{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+

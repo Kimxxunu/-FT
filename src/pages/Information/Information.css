@@ -1,0 +1,92 @@
+.Information{
+    width: 100VW;
+    height: 4700px;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    
+}
+
+.Information-White{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.Information-Warp{
+    width: 80%;
+}
+
+.Information-Warp2{
+    width: 80%;
+}
+
+
+.Information-Warp-Header-Contents{
+    font-family:'GmarketSansMedium';
+    margin: 50px 0px;
+}
+.Information-Warp-Header-Contents-Title p{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 16px 0px;
+}
+.Information-Warp-Header-Contents-Content p{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 3px 0px;
+}
+
+
+.Information-Warp-Image{
+    width: 100%;
+}
+.Information-Warp-Image img{
+    width: 90%;
+}
+
+
+@media (max-width: 550px) {
+    .Information-Warp-Header-Contents-Title p{
+        font-size: 25px;
+        padding: 10px 0px;
+    }
+    .Information-Warp-Header-Contents-Content p{
+        font-size: 15px;
+        padding: 3px 0px;
+    }
+    .Information-Warp{
+        width: 100%;
+    }
+    .Information{
+        height: 4220px;
+    }
+  }
+
+  @media (max-width: 950px) {
+    .Information{
+        height: 4220px;
+    }
+  }
+
+  @media (max-width: 670px) {
+    .Information{
+        height: 4020px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .Information{
+        height: 4220px;
+    }
+}
+@media (max-width: 530px) {
+    .Information{
+        height: 4180px;
+    }
+}

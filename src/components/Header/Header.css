@@ -1,0 +1,280 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100vw;
+    height: 80px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-wrap{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header-left a{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.header-logo {
+    height: 50px; /* Adjust according to your logo size */
+    margin-right: 10px;
+}
+
+
+@font-face {
+    font-family: 'Tenada';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header-title {
+    margin-top: 11px;
+    font-size: 27px;
+    color: #000000;
+    font-family: 'Tenada';
+    white-space: nowrap;
+    letter-spacing:3px
+}
+
+.header-nav {
+    display: flex;
+    width:50%;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+.header-nav a {
+    
+    font-family:'GmarketSansMedium';
+    font-size: 17px;
+    text-decoration: none;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon {
+    margin-left: 15px;
+    
+}
+
+.header-icon img {
+    height: 34px;
+}
+
+.header-right-checkbox{
+    display: none;
+    font-family:'GmarketSansMedium';
+    z-index: 3;
+}
+
+
+
+
+
+input[id="menuicon"]{display: none;}
+input[id="menuicon"] + label{
+  display: block;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  
+}   
+input[id="menuicon"] + label span{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #000000;
+  transition: all .35s;
+}
+input[id="menuicon"] + label span:nth-child(1){
+  top:0;
+}
+input[id="menuicon"] + label span:nth-child(2){
+  top:50%;
+  transform: translateY(-50%);
+}
+input[id="menuicon"] + label span:nth-child(3){
+  bottom:0;
+}
+input[id="menuicon"]:checked + label{z-index:2;}
+input[id="menuicon"]:checked + label span:nth-child(1){top: 50%;transform: translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2){opacity: 0;}
+input[id="menuicon"]:checked + label span:nth-child(3){bottom: 50%;transform: translateY(50%) rotate(-45deg);}
+div[class="sidebar"]{
+  width: 170px;
+  height: 100%;
+  position: fixed;
+  top: -2%;
+  right:-300px;
+  transition: all .35s;
+  background: #ffffff;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+input[id="menuicon"]:checked + label + div{
+  right: 0;
+}
+input[id="menuicon"] + label{
+  display: block;
+  width: 35px;
+  height: 30px;
+  position: fixed;
+  right: 20px;
+  top: 25px;
+  transition: all .35s;
+  cursor: pointer;
+}
+input[id="menuicon"]:checked + label {
+    right: 20px;  /* Ensure it stays in the same position */
+  }
+#sidebar_ul{
+  list-style-type: none;
+  line-height: 50px;
+  position: absolute;
+  left: 25%;
+  top: 26%;
+  color: black;
+}
+
+#sidebar_ul li{
+    margin: 18px 0px;
+}
+
+.sidebar-Image img{
+    margin: 100px 0px 0px 32px;
+    width: 105px;
+}
+
+@media (max-width: 1200px) {
+    .header-logo {
+        height: 45px; /* Adjust according to your logo size */
+        margin-right: 10px;
+    }
+    
+    .header-title {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight:bolder;
+        color: #000000;
+        font-family: 'Tenada';
+    }
+    
+
+    
+    .header-nav a {
+        
+        font-size: 15px;
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .header-icon img {
+        height: 26px;
+    }
+  }
+
+
+  @media (max-width: 700px) {
+    .header-right-checkbox{
+        display: block;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100vw;
+        height: 80px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .header-wrap{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    .header-left a{
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    
+    .header-logo {
+        height: 50px; /* Adjust according to your logo size */
+        margin-right: 10px;
+    }
+    
+    .header-title {
+        margin-top: 9px;
+        font-size: 24px;
+        font-weight:bolder;
+        color: #000000;
+        font-family: 'Tenada';
+        white-space: nowrap;
+    }
+    
+    .header-nav {
+        display: none;
+        width:50%;
+        margin-left: 20px;
+        justify-content: space-between;
+    }
+    
+    .header-nav a {
+        
+        font-family:'GmarketSansMedium';
+        font-size: 17px;
+        text-decoration: none;
+        color: #000000;
+        white-space: nowrap;
+    }
+    
+    .header-right {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-icon {
+        margin-left: 15px;
+        
+    }
+    
+    .header-icon img {
+        height: 34px;
+    }
+    .header-icon.instagram{
+        display: none;
+    }
+    .header-icon.kakao{
+        display: none;
+    }
+    
+    .header-icon {
+        margin-left: -5px;
+      }
+
+  }
+

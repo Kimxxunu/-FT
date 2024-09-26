@@ -1,0 +1,26 @@
+.Review{
+    width: 100vw;
+    font-family:'GmarketSansMedium';
+    display: flex;
+    justify-content: center;
+}
+
+.Review-Warp{
+    width: 90%;
+}
+
+.Review-Warp-Body{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Review-Warp-Title{
+    margin: 50px 0px;
+}
+
+.Review-Warp-Title p{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px 0px;
+}

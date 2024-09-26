@@ -1,0 +1,48 @@
+.SliderContents-Title p{
+    font-size: 30px;
+    font-family:'GmarketSansMedium';
+    font-weight: bold;
+    margin: 30px 0px;
+}
+
+.SliderContents-Title{
+    margin-top: 100px;
+}
+
+.slick-slide div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+
+  .slick-slider.slick-initialized{
+    height: 450px !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  
+.slick-prev:before,
+.slick-next:before{
+    color: rgb(213, 213, 213) !important;
+    font-size: 50px !important;
+}
+
+
+@media (max-width: 1250px) {
+    .slick-prev:before,
+    .slick-next:before{
+    font-size: 40px !important;
+    }
+
+   
+  }
+
+  @media (max-width: 850px) {
+    .slick-prev:before,
+    .slick-next:before{
+    font-size: 30px !important;
+    }
+  }
